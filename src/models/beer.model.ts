@@ -35,20 +35,9 @@ Beer.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    // createdAt: {
-    //   type: DataTypes.DATE,
-    //   defaultValue: DataTypes.NOW,
-    //   allowNull: false,
-    // },
-    // updatedAt: {
-    //   type: DataTypes.DATE,
-    //   defaultValue: DataTypes.NOW,
-    //   allowNull: true,
-    // },
   },
   {
     sequelize: sequelizeConnection,
-    // timestamps: true,
     modelName: "Beers",
     tableName: "beers",
   }

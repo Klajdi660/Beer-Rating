@@ -6,7 +6,6 @@ import {
   getBeerByName,
   updateBeerRating,
 } from "../services";
-import { Beer } from "../models";
 
 export const getAllBeersHandler = async (req: Request, res: Response) => {
   const beers = await getAllBeer();
