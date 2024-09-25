@@ -8,8 +8,6 @@ export class Beer extends Model {
   type: string;
   rating: number;
   ratingCount: number;
-  createdAt: string;
-  updatedAt: string;
 }
 
 Beer.init(
