@@ -1,7 +1,6 @@
 import { Beer } from "../models";
 import { CreateBeerParams } from "../types";
 import { log, calculateRating } from "../utils";
-import dayjs from "dayjs";
 
 export const getAllBeer = async (): Promise<Beer | any> => {
   return Beer.findAll().catch((error) => {
@@ -59,11 +58,8 @@ export const updateBeerRating = async (
 ) => {
   const newRating = calculateRating(rate, beerResults);
 
-  const currentTimestamp = dayjs().toDate();
-
   beerResults.rating = newRating;
   beerResults.ratingCount += 1;
-  beerResults.updatedAt = currentTimestamp.toDateString();
 
   return Beer.update(beerResults, { where: { id } }).catch((error) => {
     log.error(
