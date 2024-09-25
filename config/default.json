@@ -4,11 +4,5 @@
     "prefix": "/api",
     "origin": "http://localhost:3000"
   },
-  "logLevel": "info",
-  "mysql": {
-    "dbHost": "DATABASE_HOST",
-    "dbUser": "DATABASE_USER",
-    "dbPassword": "",
-    "dbName": "DATABASE_NAME"
-  }
+  "logLevel": "info"
 }
