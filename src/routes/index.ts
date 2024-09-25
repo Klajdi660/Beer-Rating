@@ -3,10 +3,8 @@ import config from "config";
 import beerRoutes from "./beer.route";
 import { AppConfig } from "../types";
 
-const { prefix } = config.get<AppConfig>("app");
-
 const routes = Router();
 
-routes.use(`${prefix}`, beerRoutes);
+routes.use(beerRoutes);
 
 export default routes;

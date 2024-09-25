@@ -1,6 +1,5 @@
 export interface AppConfig {
   port: number;
-  prefix: string;
   origin: string;
 }
 
